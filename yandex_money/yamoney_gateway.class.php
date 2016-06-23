@@ -193,8 +193,6 @@ class WC_epl_Gateway extends WC_yam_Gateway{
     }
     public function admin_options(){
         echo '<h3>'.$this ->long_name.'</h3>';
-        echo '<h5>'.__('<b>Внимание! Этот режим должен быть включен и на стороне сервиса Яндекс.Касса.</b>
-                        <br>Чтобы активировать этот сценарий, напишите менеджеру Кассы на <a href="mailto:merchants@yamoney.ru">merchants@yamoney.ru</a> или позвоните по телефону 8 800 250-66-99.','yandex_money').'</h5>';
         echo '<table class="form-table">';
         // Generate the HTML For the settings form.
         $this -> generate_settings_html();
