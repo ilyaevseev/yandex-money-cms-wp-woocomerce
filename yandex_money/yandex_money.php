@@ -204,7 +204,7 @@ function yandexMoney_submenu_page_callback() {
 
                 <tr valign="top">
                     <th scope="row">Демо режим<br/><span style="line-height: 1;font-weight: normal;font-style: italic;font-size: 12px;">Включить демо режим для тестирования<span></th>
-                    <td><input type="checkbox" name="ym_Demo" <?php echo get_option('ym_Demo')=='on'?'checked="checked"':''; ?>" /></td>
+                    <td><input type="checkbox" name="ym_Demo" <?php echo get_option('ym_Demo')=='on'?'checked="checked"':''; ?>/></td>
                 </tr>
 
                 <tr valign="top">
