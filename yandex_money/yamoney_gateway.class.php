@@ -108,7 +108,7 @@ class WC_yam_Gateway extends WC_Payment_Gateway{
         $result .= '<input name="cms_name" type="hidden" value="wp-woocommerce">';
         $result .= '<input type="submit" value="Оплатить">';
         $result .='<script type="text/javascript">';
-        $result .='jQuery(function(){
+        /*$result .='jQuery(function(){
 		jQuery("body").block(
         {
             message: "Спасибо за заказ. Сейчас Вы будете перенаправлены на страницу оплаты.",
@@ -129,7 +129,7 @@ class WC_yam_Gateway extends WC_Payment_Gateway{
 		});
 		});
 		';
-        $result .='jQuery(document).ready(function ($){ jQuery("#submit_'.$this ->id.'_payment_form").submit(); });';
+        $result .='jQuery(document).ready(function ($){ jQuery("#submit_'.$this ->id.'_payment_form").submit(); });';*/
         $result .='</script></form>';
         $woocommerce->cart->empty_cart();
         return $result;

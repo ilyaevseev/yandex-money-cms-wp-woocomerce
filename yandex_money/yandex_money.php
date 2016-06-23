@@ -3,7 +3,7 @@
 Plugin Name: yandexmoney_wp_woocommerce
 Plugin URI: https://github.com/yandex-money/yandex-money-cms-wp-woocomerce
 Description: Online shop with Yandex.Money support.
-Version: 2.3.0.1
+Version: 2.3.0.2
 Author: Yandex.Money
 Author URI: http://money.yandex.ru
  */
@@ -223,10 +223,8 @@ function yandexMoney_submenu_page_callback() {
                 <tr valign="top">
                     <th scope="row">Сценарий оплаты</th>
                     <td>
-                        <input type="radio" name="ym_paymode" value="0" <?php if (get_option('ym_paymode')!='1') echo ' checked="checked" '; ?> />Выбор оплаты на стороне магазина<br>
                         <input type="radio" name="ym_paymode" value="1" <?php if (get_option('ym_paymode')=='1') echo ' checked="checked" '; ?> />Выбор оплаты на стороне сервиса Яндекс.Касса<br>
-                        <br><b>Внимание! Режим "Выбор оплаты на стороне сервиса Яндекс.Касса" должен быть включен и на стороне сервиса Яндекс.Касса.</b>
-                        <br>Чтобы активировать этот сценарий, напишите менеджеру Кассы на <a href="mailto:merchants@yamoney.ru">merchants@yamoney.ru</a> или позвоните по телефону 8 800 250-66-99.;
+                        <input type="radio" name="ym_paymode" value="0" <?php if (get_option('ym_paymode')!='1') echo ' checked="checked" '; ?> />Выбор оплаты на стороне магазина<br>
                     </td>
                 </tr>
                 <tr valign="top">
@@ -348,7 +346,7 @@ class yamoney_statistics {
             'url' => get_option('siteurl'),
             'cms' => 'wordpress-woo',
             'version' => $wp_version,
-            'ver_mod' => '2.3.0.1',
+            'ver_mod' => '2.3.0.2',
             'yacms' => false,
             'email' => get_option('admin_email'),
             'shopid' => get_option('ym_ShopID'),
