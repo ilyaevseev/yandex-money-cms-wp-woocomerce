@@ -329,6 +329,7 @@ function YMcheckPayment()
         }
         $answer = '<?xml version="1.0" encoding="UTF-8"?>
 			<'.$_POST['action'].'Response performedDatetime="'.date('c').'" code="'.$code.'" invoiceId="'.$_POST['invoiceId'].'" shopId="'.get_option('ym_ShopID').'" techMessage="'.$techMessage.'"/>';
+        ob_clean();
         die($answer);
     }
 }
