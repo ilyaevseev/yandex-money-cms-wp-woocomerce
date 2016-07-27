@@ -8,16 +8,6 @@ License URI: https://money.yandex.ru/doc.xml?id=527132
 Плагин для приема платежей на сайтах WooCommerce. Разработка и поддержка — компания «Яндекс.Деньги».
 
 == Description ==
-=== Plugin Name ===
-Tags: woocommerce, payment, gateway, Yandex
-Requires at least: 4.0.1
-Tested up to: 4.3.5
-Stable tag: 2.3.1
-License URI: https://money.yandex.ru/doc.xml?id=527132
-
-Плагин для приема платежей на сайтах WooCommerce. Разработка и поддержка — компания «Яндекс.Деньги».
-
-== Description ==
 
 Плагин «Яндекс.Касса» – платежное решение для сайтов на WooCommerce:
 
