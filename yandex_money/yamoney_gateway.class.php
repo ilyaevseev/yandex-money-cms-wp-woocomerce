@@ -91,7 +91,7 @@ class WC_yam_Gateway extends WC_Payment_Gateway{
         global $woocommerce;
         $this->order = new WC_Order($order_id);
         $txnid = $order_id;
-        $sendurl=get_option('ym_Demo')=='on'?'https://demomoney.yandex.ru/eshop.xml':'https://money.yandex.ru/eshop.xml';
+        $sendurl=get_option('ym_Demo')=='1'?'https://demomoney.yandex.ru/eshop.xml':'https://money.yandex.ru/eshop.xml';
         $result ='';
         $result .= '<form name=ShopForm method="POST" id="submit_'.$this->id.'_payment_form" action="'.$sendurl.'">';
         $result .= '<input type="hidden" name="firstname" value="'.$this->order -> billing_first_name.'">';

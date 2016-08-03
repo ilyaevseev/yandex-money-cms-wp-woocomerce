@@ -200,8 +200,8 @@ function yandexMoney_submenu_page_callback() {
                 <tr valign="top">
                     <th scope="row"></th>
                     <td>
-                        <input type="radio" name="ym_Demo" value="1"<?php echo get_option('ym_Demo')=='on'?'checked="checked"':''; ?>/>Тестовый режим
-                        <input type="radio" name="ym_Demo" value="0"<?php echo get_option('ym_Demo')!='on'?'checked="checked"':''; ?>/>Рабочий режим
+                        <input type="radio" name="ym_Demo" value="1" <?php echo get_option('ym_Demo')=='1'?'checked="checked"':''; ?>/>Тестовый режим
+                        <input type="radio" name="ym_Demo" value="0" <?php echo get_option('ym_Demo')!='1'?'checked="checked"':''; ?>/>Рабочий режим
                     </td>
                 </tr>
                 <tr valign="top">
