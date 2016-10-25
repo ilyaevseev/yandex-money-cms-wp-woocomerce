@@ -174,7 +174,6 @@ function register_my_setting() {
     register_setting( 'woocommerce-yamoney', 'ym_page_mpos');
     register_setting( 'woocommerce-yamoney', 'ym_success');
     register_setting( 'woocommerce-yamoney', 'ym_fail');
-    error_log("register_my_setting");
 }
 add_action('admin_menu', 'register_yandexMoney_submenu_page');
 add_action('update_option_ym_ShopID', 'after_update_setting');
